@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-gray-900 antialiased;
+}
+
+.hero-background {
+  background-image: url('https://snu.edu.in/site/assets/files/14210/hand-holding-virtual-icon-graduation-hat.1600x0.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-background {
+  background-image: url('https://img.freepik.com/free-vector/realistic-ice-skating-background_23-2150959949.jpg?semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-overlay-light {
+  @apply backdrop-blur-sm bg-white/30;
+}
+
+.section-overlay-medium {
+  @apply backdrop-blur-md bg-white/40;
+}
+
+.section-overlay-heavy {
+  @apply backdrop-blur-lg bg-white/50;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.tech-logo {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  @apply w-5 h-5 mr-2;
+}
+
+.section-heading {
+  @apply text-3xl font-bold text-gray-900 mb-8 flex items-center;
+}
+
+.skill-card {
+  @apply bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex items-center space-x-3;
+}
+
+.achievement-card {
+  @apply bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all border-l-4 border-blue-500;
+}
